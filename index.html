@@ -11,7 +11,9 @@
   -->
   <title>Mico - I'm User Graphic Designer & Developer.</title>
   <meta name="title" content="Mico - I'm User Graphic Designer & Developer.">
-  <meta name="description" content="#">
+  <meta name="description" content="I'm mico!">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
   <!-- 
     - favicon
@@ -70,19 +72,16 @@
           </li>
 
           <li>
-            <a href="#" class="navbar-link">About</a>
+            <a href="#whatIDo" class="navbar-link">About</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link">Projects</a>
+            <a href="#projectscroll" class="navbar-link">Projects</a>
           </li>
 
+          
           <li>
-            <a href="#" class="navbar-link">Blog</a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link">Contact</a>
+            <a href="#contactScroll" class="navbar-link">Contact</a>
           </li>
 
         </ul>
@@ -163,7 +162,7 @@
           <div class="hero-content">
 
             <h1 class="h1 hero-title" data-reveal="top" data-reveal-delay="0.5s">
-              I'm User Graphic Designer & Developer.
+              I'm Graphic Designer & Developer.
             </h1>
 
             <p class="section-text" data-reveal="top" data-reveal-delay="0.75s">
@@ -171,47 +170,15 @@
             </p>
 
             <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
-              <a href="#" class="btn btn-primary">See My Works</a>
+              <a href="#projectscroll" class="btn btn-primary">See My Works</a>
 
-              <a href="#" class="btn btn-secondary">Contact Me</a>
+              <a href="#contactScroll" class="btn btn-secondary">Contact Me</a>
             </div>
 
 
 <br>
 
-  <ul class="social-list">
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-dribbble"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
+  
           </div>
 
         </div>
@@ -225,7 +192,7 @@
         - #ABOUT
       -->
 
-      <section class="section about" aria-label="about">
+      <section class="section about" id="whatIDo" aria-label="about">
         <div class="container">
 
           <div class="wrapper">
@@ -380,7 +347,7 @@
         - #PROJECT
       -->
 
-      <section class="section project" aria-labelledby="project-label">
+      <section class="section project" id="projectscroll" aria-labelledby="project-label">
         <div class="container">
 
           <div class="title-wrapper" data-reveal="top">
@@ -528,7 +495,7 @@
         - #CONTACT
       -->
 
-      <section class="section contact" aria-label="contact">
+      <section class="section contact" id="contactScroll" aria-label="contact">
         <div class="container">
 
           <div class="contact-card">
@@ -539,10 +506,10 @@
                 <img src="./assets/images/icon-5.svg" width="44" height="44" loading="lazy" alt="envelop icon">
               </div>
 
-          <h2 class="h2 section-title">Interested in working together? Let's connect.</h2>
+          <h2 class="h2 section-title">Contact me</h2>
 
 <p class="section-text">
-  I provide efficient solutions designed to streamline your projects and enhance your success. Should you have any inquiries or wish to discuss a potential collaboration, please reach out through this contact form, and I will respond at your earliest convenience.
+  Reach Out to me! Discuss a Project or just want to say Hi? My inbox is open for all.
  
 
               </p>
@@ -551,17 +518,33 @@
 
             <form action="" class="contact-form" data-reveal="right">
 
-              <div class="input-wrapper">
-                <input type="text" name="name" placeholder="Name *" required class="input-field">
+              <div class="contact-links">
+                <ul>
+                <li>
+                    <a href="mailto:micotubice@example.com">
+                        <i class="fas fa-envelope"></i>Email
+                    </a>
+                </li>
 
-                <input type="email" name="email_address" placeholder="Email *" required class="input-field">
-              </div>
+					<li>
+                    <a href="https://www.linkedin.com/in/mico-tubice-a138ab20b/">
+                        <i class="fab fa-linkedin"></i>Linkedin
+                    </a>
+               		</li>
 
-              <textarea name="message" placeholder="Message *" required class="input-field"></textarea>
+					<li>
+                    <a href="https://www.upwork.com/freelancers/~01c5e140f81bda7059?s=1110580753669279744">
+              		 <i class="fas fa-briefcase"></i> Upwork
+                    </a>
+               		</li>
+ 
+					 
 
-              <button type="submit" class="btn btn-secondary">Send message</button>
+ 
+           
 
-            </form>
+                <!-- Add more social links as needed -->
+            </ul>
 
           </div>
 
@@ -584,39 +567,7 @@
 
       
 
-      <ul class="social-list">
-
-        <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-twitter"></ion-icon>
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-facebook"></ion-icon>
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-dribbble"></ion-icon>
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-instagram"></ion-icon>
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-youtube"></ion-icon>
-          </a>
-        </li>
-
-      </ul>
+      
 
     </div>
   </footer>

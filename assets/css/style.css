@@ -546,6 +546,43 @@ textarea.input-field {
 
 
 
+ .contact-links ul {
+            list-style: none;
+            padding: 0;
+            display: flex; /* Make the list items horizontal */
+            gap: 15px; /* Add space between items */
+        }
+        .contact-links li {
+            display: flex;
+            align-items: center;
+             transition: transform 0.2s ease-in-out;
+             color: var(--charcoal); /* Default icon color */
+        }
+        .contact-links a {
+          
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        .contact-links i {
+            font-size: 44px; /* Adjust size as needed */
+            margin-right: 8px;
+        }
+         .contact-links a:hover {
+            text-decoration: underline;
+        }
+        .contact-links li:hover {
+            transform: translateY(-10px); /* Move item up */
+        }
+
+
+
+
+
+
+
+
+
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
