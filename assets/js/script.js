@@ -70,3 +70,19 @@ for (let i = 0, len = revealDelayElements.length; i < len; i++) {
 
 window.addEventListener("scroll", reveal);
 window.addEventListener("load", reveal);
+
+
+
+
+ 
+  document.addEventListener('DOMContentLoaded', function () {
+    const dropdownBtn = document.querySelector('.dropdown-btn');
+    const dropdownContent = document.querySelector('.dropdown-content');
+
+    dropdownBtn.addEventListener('click', function (event) {
+      event.preventDefault(); // Prevent default anchor behavior
+      const isVisible = dropdownContent.classList.contains('show');
+      dropdownContent.classList.toggle('show', !isVisible);
+    });
+  });
+ 
