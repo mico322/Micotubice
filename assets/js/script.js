@@ -86,3 +86,15 @@ window.addEventListener("load", reveal);
     });
   });
  
+
+
+
+document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+  toggle.addEventListener('click', function(e) {
+    e.preventDefault(); // Prevent default link behavior
+    this.classList.toggle('active'); // Toggle the active class
+  });
+});
+
+
+
