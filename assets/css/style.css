@@ -1170,3 +1170,53 @@ textarea.input-field {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 620px;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-card {
+  min-width: 100%;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 95%;
+  transform: translateY(-50%);
+  background-color: #3f78e0;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#prevBtn {
+  left: 0;
+}
+
+#nextBtn {
+  right: 0;
+}

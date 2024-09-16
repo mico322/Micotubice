@@ -98,3 +98,22 @@ document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
 
 
 
+ 
+  const slider = document.querySelector('.slider');
+  const nextBtn = document.getElementById('nextBtn');
+  const prevBtn = document.getElementById('prevBtn');
+
+  let currentIndex = 0;
+
+  nextBtn.addEventListener('click', () => {
+    const totalItems = document.querySelectorAll('.slider li').length;
+    currentIndex = (currentIndex + 1) % totalItems; // Loop back to the first image
+    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+  });
+
+  prevBtn.addEventListener('click', () => {
+    const totalItems = document.querySelectorAll('.slider li').length;
+    currentIndex = (currentIndex - 1 + totalItems) % totalItems; // Loop to the last image
+    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+  });
+ 
