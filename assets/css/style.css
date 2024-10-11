@@ -651,6 +651,51 @@ body.nav-active { overflow: hidden; }
   #CONTACT
 \*-----------------------------------*/
 
+
+.contact-details {
+  display: flex; /* Use flexbox to align items */
+  flex-direction: column; /* Stack items vertically */
+  gap: 10px; /* Space between items */
+  color: var(--charcoal); /* Default text color */
+}
+
+.contact-details a {
+  color: var(--charcoal); /* Icon and text color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.contact-details a:hover {
+  color: var(--cinnamon-satin); /* Change color on hover */
+}
+
+.contact-details .icon {
+  width: 24px; /* Icon width */
+  height: 24px; /* Icon height */
+  margin-right: 8px; /* Space between icon and text */
+  vertical-align: middle; /* Center icon vertically */
+}
+
+/* Specific styles for each contact detail */
+.contact-details .email,
+.contact-details .phone,
+.contact-details .address {
+  display: flex; /* Align icon and text in a row */
+  align-items: center; /* Center vertically */
+}
+
+.contact-details .email i,
+.contact-details .phone i,
+.contact-details .address i {
+  color: var(--charcoal); /* Icon color */
+  font-size: 24px; /* Icon size */
+}
+
+
+
+
+
+
 .contact { padding-block-end: 0; }
 
 .contact-card {
@@ -714,6 +759,72 @@ textarea.input-field {
         .contact-links li:hover {
             transform: translateY(-10px); /* Move item up */
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-card {
+  background-color: #f9f9f9; /* Adjust to your card background */
+  padding: 20px; /* Adjust padding */
+  border-radius: 8px; /* Adjust border radius */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adjust shadow */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Spacing between form groups */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px; /* Spacing between label and input */
+  font-weight: bold; /* Bold label text */
+}
+
+.form-input,
+.form-textarea {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding inside the input */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 4px; /* Border radius */
+  font-size: 16px; /* Font size */
+  transition: border-color 0.3s; /* Smooth border transition */
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove outline */
+}
+
+.submit-btn {
+  background-color: var(--cinnamon-satin);
+  color: #fff; /* Button text color */
+  padding: 10px 15px; /* Button padding */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Button border radius */
+  cursor: pointer; /* Change cursor on hover */
+  font-size: 16px; /* Button text size */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.submit-btn:hover {
+  background-color: #00B2B2; /* Darker button color on hover */
+}
+
+
+
+
 
 
 
