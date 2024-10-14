@@ -761,27 +761,22 @@
       </div>
 
       <!-- Contact Form -->
-      <form action="https://formspree.io/f/xpwzzaaz" method="post" class="contact-form" data-reveal="right">
-
+   <form id="contactForm" action="https://formspree.io/f/xpwzzaaz" method="post" class="contact-form">
         <div class="form-group">
-          <label for="name">Your Name</label>
-          <input type="text" id="name" name="name" class="form-input">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" class="form-input" required>
+            <span class="error-message hidden" id="emailError">Please enter a valid email.</span>
         </div>
 
         <div class="form-group">
-          <label for="email">Your Email</label>
-          <input type="email" id="email" name="email" class="form-input">
-        </div>
-
-     
-        <div class="form-group">
-          <label for="message">Your Message</label>
-          <textarea id="message" name="message" rows="5" class="form-textarea"></textarea>
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" class="form-textarea" required></textarea>
+            <span class="error-message hidden" id="messageError">Please enter your message.</span>
         </div>
 
         <button type="submit" class="submit-btn">Send Message</button>
-
-      </form>
+        <div class="success-message hidden" id="successMessage">Your message has been sent successfully!</div>
+    </form>
 
     </div>
   </div>
@@ -808,10 +803,51 @@
 
 
 
+<script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Reset previous error messages
+            document.getElementById('emailError').classList.add('hidden');
+            document.getElementById('messageError').classList.add('hidden');
+            document.getElementById('successMessage').classList.add('hidden');
+
+            let isValid = true;
+
+            // Email validation
+            const emailInput = document.getElementById('email');
+            if (!emailInput.checkValidity()) {
+                document.getElementById('emailError').classList.remove('hidden');
+                isValid = false;
+            }
+
+            // Message validation
+            const messageInput = document.getElementById('message');
+            if (!messageInput.value.trim()) {
+                document.getElementById('messageError').classList.remove('hidden');
+                isValid = false;
+            }
+
+            // If form is valid, submit it
+            if (isValid) {
+                this.submit();
+                document.getElementById('successMessage').classList.remove('hidden');
+            }
+        });
+    </script>
+
+
+
   <!-- 
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
+
+
+
+
+
+
 
   <!-- 
     - ionicon link
