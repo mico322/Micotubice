@@ -215,7 +215,7 @@ body.nav-active { overflow: hidden; }
   font-weight: var(--fw-700);
   border: 2px solid var(--cinnamon-satin);
   max-width: max-content;
-  padding: 12px 28px;
+  padding: 12px 58px;
   border-radius: var(--radius-pill);
   transition: var(--transition-1);
   will-change: transform;
