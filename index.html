@@ -983,4 +983,38 @@ s0.parentNode.insertBefore(s1,s0);
 <!--End of Tawk.to Script-->
 
 
+
+<script>
+  fetch("https://api.ipify.org?format=json")
+    .then(res => res.json())
+    .then(data => {
+      fetch("https://script.google.com/macros/s/AKfycbyfgJv7m_x4EoH1IQpsJD2NG6R2sY0RjiBTFhzCsqyXD33ZzT68agi5WUCXOZjijTs-zA/exec", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ip: data.ip,
+          ua: navigator.userAgent
+        })
+      });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </html>
